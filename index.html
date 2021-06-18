@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BİL-KAZAN</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+    <!-- start Quiz button -->
+    <div class="start_btn"><button>Başla</button></div>
+
+    <!-- Info Box -->
+    <div class="info_box">
+        <div class="info-title"><span>Oyunun Kuralları</span></div>
+        <div class="info-list">
+            <div class="info">1. Her soru için sadece <span>10 saniyeniz</span> olacaktır.</div>
+            <div class="info">2. Cevabınızı seçtikten sonra değiştiremezsiniz.</div>
+            <div class="info">3. Zamanınız bittiğinde seçenek işaretleyemezsiniz.</div>
+            <div class="info">4. Doğru cevaplarınıza göre puan alacaksınız.</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Çıkış</button>
+            <button class="restart">Devam</button>
+        </div>
+    </div>
+
+    <!-- Quiz Box -->
+    <div class="quiz_box">
+        <header>
+            <div class="title">BİL-KAZAN</div>
+            <div class="timer">
+                <div class="time_left_txt">Kalan Zaman</div>
+                <div class="timer_sec">10</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="photo"></div>
+            <div class="que_text">
+                <!-- Here I've inserted question from JavaScript -->
+            </div>
+            <div class="option_list">
+            </div>
+        </section>
+
+        <!-- footer of Quiz Box -->
+        <footer>
+            <div class="total_que">
+
+            </div>
+            <button class="next_btn">Sonraki</button>
+        </footer>
+    </div>
+
+    <!-- Result Box -->
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">Bitti!</div>
+        <div class="score_text">
+
+        </div>
+        <div class="buttons">
+            <button class="restart">Tekrar Oyna</button>
+            <button class="quit">Oyundan Çık</button>
+        </div>
+    </div>
+
+
+    <script src="js/questions.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
